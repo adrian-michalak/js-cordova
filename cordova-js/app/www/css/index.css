@@ -1,0 +1,140 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+ * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    
+    /*font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;*/
+    /*font-size:12px;*/
+    height:100%;
+    margin:0px;
+    padding:0px;
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+    /*text-transform:uppercase;*/
+    width:100%;
+   
+}
+
+#main-conteiner-id{
+    text-align: center;    
+    width: 95%;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+#img-conteiner{
+    margin: 0 auto;
+    display: inline-block;
+    padding: 20px;
+}
+.button--large--cta{
+    padding: 20px;
+    margin: 10px;
+    background-color: teal;
+    border-radius: 50px;
+}
+#homePage .page__background, #events .page__background, #bmi .page__background, #gallery .page__background, #price .page__background{
+   background-color: gold;
+}
+#textarea-result{
+    text-align: center;
+    size: 30px;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: black;
+    color:white;
+    width: 200px;
+    height: 10%;
+}
+#id-bmi-calc{
+    font-weight: bold;
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#bmi-container{
+    width: 100%;
+    height: 100%;
+}
+#div-bmi{
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-top: 100px;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  border: 5px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+#head-name{
+    width: 60%;
+    height: 80px;
+    color: white;
+    size: 200px;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+    border: 5px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#posts-content{
+    padding-top: 40px;
+    height: 80%;
+    width: 70%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 0px 35px 35px 0px;
+}
+#id-add{
+    width: 10%;
+    color: aliceblue;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-style: bold;
+}
+
+#container {
+    display: grid;
+    max-width: 400px;
+    align-items: center;
+    margin: 0 auto;
+}

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+   
+</head>
+
+<body >
+  <ons-navigator swipeable id="myNavigator" page="homePage.html"></ons-navigator>
+ <!--==========================================================================-->
+    <template id="homePage.html">
+      <ons-page id="homePage">
+        <ons-toolbar>
+          <div class="center">
+              <i class="fas fa-home"></i>
+          </div>
+        </ons-toolbar>
+        <div id="head-name">
+          <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: 900;color: teal">GYM STYLE</h1>
+        </div>
+        <section style="width: 55%; margin: 0 auto; padding: 20px ; display: grid; grid-template-columns: auto auto ;">
+          <div id="push-button-bmi" class="button--large--cta" style="width: 85%;"  >
+              <span style="font-size: 40px; color: white;">
+                <i class="fas fa-calculator"></i><br>
+              </span>Bmi
+          </div>
+          <div id="push-button-gallery" class="button--large--cta" style="width: 85%;"  >
+              <span style="font-size: 40px; color: white;">
+                  <i class="fas fa-images"></i><br>
+              </span>Gallery
+          </div>
+          <div id="push-button-events" class="button--large--cta" style="width: 85%;"  >
+              <span style="font-size: 40px; color: white;">
+                  <i class="fas fa-dumbbell"></i><br>
+              </span>Fitness
+          </div>
+          <div id="push-button-price" class="button--large--cta" style="width: 85%;"  >
+              <span style="font-size: 40px; color: white;">
+                  <i class="far fa-credit-card"></i><br>
+              </span>Price
+          </div>
+           
+        </section>
+      </ons-page>
+    </template>
+     <!--=========================BMI=================================================-->
+    <template id="bmi.html">
+      <ons-page id="bmi">
+        <ons-toolbar>
+          <div class="left"><ons-back-button></ons-back-button></div> 
+          <div class="center">  <i class="fas fa-calculator"></i></div>
+        
+        </ons-toolbar>
+        <div id="bmi-container">
+            <div id="div-bmi" >
+                <p>
+                  <ons-input id="weight" modifier="underbar" placeholder="Weight" type="number" style="color: black;"></ons-input>
+                </p>
+                <p>
+                  <ons-input id="growth" modifier="underbar" placeholder="Growth" type="number" style="color: black;"></ons-input>
+                </p>
+                <p style="margin-top: 30px;">
+                  <ons-button id="id-bmi-calc" onclick="calc()">BMI</ons-button>
+                </p>
+                <p>
+                    <textarea id="textarea-result" class="textarea" rows="2" placeholder="Result"></textarea>
+                </p>
+                
+              </div>
+        </div>
+        
+      </ons-page>
+    </template>
+ <!--======================GALLERY====================================================-->
+    <template id="gallery.html">
+        <ons-page id="gallery" style="text-align: center">
+          <ons-toolbar>
+            <div class="left"><ons-back-button></ons-back-button></div>  
+            <div class="center">
+                <i class="fas fa-images"></i>
+            </div>
+          </ons-toolbar>
+          <div id="img-conteiner"></div>
+        </ons-page>
+    </template>
+ <!--========================EVENTS==================================================-->
+    <template id="events.html"  >
+          <ons-page id="events" style="margin: auto">
+            <ons-toolbar>
+               <div class="left"><ons-back-button></ons-back-button></div>  
+              <div class="center"> <i class="fas fa-dumbbell"></i></div>
+             
+            </ons-toolbar> 
+            <div id="container"> </div> 
+                
+          </ons-page>
+    </template>
+ <!--===========================PRICE===============================================-->
+    <template id="price.html">
+            <ons-page id="price">
+              <ons-toolbar>
+                 <div class="left"><ons-back-button></ons-back-button></div>  
+                <div class="center">  <i class="far fa-credit-card"></i></div>
+              </ons-toolbar> 
+              
+              <div id="container"> </div>
+             
+            </ons-page>
+    </template>
+  
+<!--=====================================================================================-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-storage.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!--=====================================================================================-->
+</body>
+</html>
